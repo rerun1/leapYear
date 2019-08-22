@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Identify Leap Years</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-10">
+          <h1>Leap Year Detector</h1>
+        </div>
+      </div>
+      <form id="enterYear">
+        <div class="row justify-content-center">
+          <div class="col-10">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Enter a year:</span>
+              </div>
+              <input id="inputYear" type="number" min="1600" max="2400" class="pl-2" required>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <button type="submit" class="btn btn-info">Is it a Leap?</button>
+          </div>
+        </div>
+      </form>
+      <div id="displayLeap">
+        <p id="leapYear" class="leapYearStyle mt-2"></p>
+        <p class="mt-2">One year has the length of 365 days, 5 hours, 48 minutes and 45 seconds. This is hard to calculate with, so a normal year has been given 365 days and a leap year 366 days. In leap years, February 29th is added as leap day, which doesn't exist in a normal year. A leap year is every 4 years, but not every 100 years, then again every 400 years.
+        This year 2019 isn't a leap year. The last leap year was 2016, the next will be 2020. Below is a list of all the leap years since 1600.</p>
+        <p id="leapList" class="leapListBackground"></p>
+      </div>
+    </div>
+  </body>
+</html>
