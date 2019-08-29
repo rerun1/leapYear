@@ -4,25 +4,20 @@ body {
   background-image: url("../img/leapBackground.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom -100px left 0px;
+  background-position: bottom 0px left 0px;
 }
-h1 {
-  text-align: center;
-}
-input {
-  width: 60%;
-}
+
 #displayLeap {
   display: none;
 }
 .leapYearStyle {
   font-weight: 700;
   font-size: 1.5em;
-  text-align: center;
 }
 ul {
   list-style: none;
 }
 .leapListBackground {
   background-color: rgba(255,255,255, 0.5);
+  padding: .75em 2em;
 }

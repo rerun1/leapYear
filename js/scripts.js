@@ -1,30 +1,27 @@
-
-
-var userYear = 0;
-var years = [];
+var year = 0;
 var leapYears = [];
+var leapYearsArray = [];
+var leapYearsArrayList = "";
 
-for (var i = 1600; i <= 2400; i += 4) {
-  years.push(i);
-}
-  // years.splice(25,1);
-  // years.splice(49,1);
-  // years.splice(73,1);
-  // years.splice(122,1);
-  // years.splice(146,1);
-  // years.splice(170,1);
-
-var remove100Year = [25,50,75,125,150,170];
-
-for (var i = remove100Year.length -1; i >= 0; i--) {
-  years.splice(remove100Year[i],1);
+var leapYear = function(year){
+  if (( year % 4 === 0 ) && ( year % 100 !== 0) || ( year % 400 === 0 )) {
+    return true;
+  } else {
+  	return false;
+  }
 }
 
-// won't mess up index if start from back
+for (var i = 1600; i <= 3000; i += 4) {
+  leapYears.push(i);
+}
 
-console.log(years);
+leapYearsArray = leapYears.filter(function(number) {
+  if ((number % 400 === 0) || (number % 100 !== 0)) {
+    return number;
+  }
+});
 
-
+leapYearsArrayList = leapYearsArray.join(", ")
 
 
 $(document).ready(function(){
@@ -33,24 +30,17 @@ $(document).ready(function(){
     event.preventDefault();
 
     $("p#leapYear").empty();
-
-    userYear = parseInt($("input#inputYear").val());
-
-    alert(userYear);
-
     $("div#displayLeap").show();
+    $("p#leapList").text(leapYearsArrayList);
 
-    for (var i = 0; i <= years.length; i += 1) {
-      if (userYear === years[i]) {
-        return $("p#leapYear").text(years[i]+" is a leap year.");
-      } else {
-        $("p#leapYear").text(userYear + " is not a leap year.")
-      }
+    var year = parseInt($("input#inputYear").val());
+    var result = leapYear(year);
+
+    if (result === true) {
+      $("p#leapYear").text(year + " is a leap year.")
+    } else {
+      $("p#leapYear").text(year + " is not a leap year.")
     }
-
-    var leapList = years.join(", ");
-
-    $("p#leapList").text(leapList);
 
   });
 

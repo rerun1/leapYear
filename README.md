@@ -5,26 +5,30 @@
 
 ## Description
 
-
+Behavior — Plain English	Input	Output
+A year is a leap year if it is divisible by 4:	2004	true
+A year is not a leap year if it is divisible by 100:	1900 = false
+A year is a leap year if it is divisible by 400:	2000 = true
+Lists all leap years from 1600 to 3000		
 
 <br>
 
 ## Objectives
-- [] JavaScript business logic and user interface logic are separate.
-- [] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
-- [] Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools.
-- [] Application implements a for loop and works as expected.
+- [x] JavaScript business logic and user interface logic are separate.
+- [x] Variable names are descriptive and use lower camel case (e.g. myVariableExample).
+- [x] Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools.
+- [x] Application implements a for loop and works as expected.
 All previous objectives have been met.
-- [] Project is broken down into "plain English" specs, listed in README.
-- [] Project is in a presentable, portfolio-quality state.
-- [] Practice styling with imagery
+- [x] Project is broken down into "plain English" specs, listed in README.
+- [x] Project is in a presentable, portfolio-quality state.
+- [x] Practice styling with imagery
 
 <br>
 
 ## Current Screenshot for Reference
 <br>
 
-![alt text](https://raw.githubusercontent.com/rerun1/factorial/master/img/screenShot8-20-19.png)
+![alt text](https://raw.githubusercontent.com/rerun1/leapYear/master/img/screenShot8-28-19.png)
 <br>
 <br>
 
