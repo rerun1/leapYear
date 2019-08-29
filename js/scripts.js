@@ -36,10 +36,10 @@ $(document).ready(function(){
     var year = parseInt($("input#inputYear").val());
     var result = leapYear(year);
 
-    if (result === true) {
-      $("p#leapYear").text(year + " is a leap year.")
-    } else {
+    if (!result) {
       $("p#leapYear").text(year + " is not a leap year.")
+    } else {
+      $("p#leapYear").text(year + " is a leap year.")
     }
 
   });
